@@ -1,0 +1,32 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+module:testrunner
+GET     /:id                                        App.Index
+POST    /:id                                        App.Create
+######### UserController ########
+POST    /api/users                                  UsersController.Create
+PUT      /api/users/:id                                UsersController.Update
+POST    /api/login                                  UsersController.Login
+############PassengersControllers#######
+POST        /api/passengers                            PassengerController.Create
+PUT         /api/passengers/:id                        PassengerController.Update
+DELETE      /api/passengers/:id                        PassengerController.Delete
+GET         /api/passengers:id                         PassengerController.Get
+GET         /api/passengers                            PassengerController.List
+############PlanesControllers############
+POST        /api/planes                                PlaneController.Create
+PUT         /api/planes/:id                            PlaneController.Update
+DELETE      /api/planes/:id                            PlaneController.Delete
+GET         /api/planes                                PlaneController.Get
+############schedulesControllers############
+POST        /api/schedules                                ScheduleController.Create
+PUT         /api/schedules/:id                            ScheduleController.Update
+DELETE      /api/schedules/:id                            ScheduleController.Delete
+GET         /api/schedules                                ScheduleController.Get
+############TicketsControllers############
+POST        /api/tickets                                TicketController.Create
+PUT         /api/tickets/:id                            TicketController.Update
+DELETE      /api/tickets/:id                            TicketController.Delete
+GET         /api/tickets                                TicketController.Get
+
