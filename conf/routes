@@ -12,13 +12,13 @@ POST    /api/login                                  UsersController.Login
 POST        /api/passengers                            PassengerController.Create
 PUT         /api/passengers/:id                        PassengerController.Update
 DELETE      /api/passengers/:id                        PassengerController.Delete
-GET         /api/passengers:id                         PassengerController.Get
+GET         /api/passengers/:id                         PassengerController.Get
 GET         /api/passengers                            PassengerController.List
 ############PlanesControllers############
 POST        /api/planes                                PlaneController.Create
 PUT         /api/planes/:id                            PlaneController.Update
 DELETE      /api/planes/:id                            PlaneController.Delete
-GET         /api/planes                                PlaneController.Get
+GET         /api/planes                               PlaneController.Get
 ############schedulesControllers############
 POST        /api/schedules                                ScheduleController.Create
 PUT         /api/schedules/:id                            ScheduleController.Update

@@ -13,7 +13,7 @@ func EncodePlane(body io.ReadCloser)(planes models.Planes)  {
 	if err :=json.Unmarshal(Planes,&planes); err !=nil{
 		log.Println(err)
 		return
-	}
+	};
 	return
 
 
